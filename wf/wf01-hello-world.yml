@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: hello-world-  # Name of this Workflow
+spec:
+  entrypoint: whalesay        # invoke the whalesay template
+  templates:
+  - name: whalesay            # name of the template
+    container:
+      image: docker/whalesay
+      command: [cowsay]
+      args: ["hello world"]   # runs "cowsay" in the "whalesay" image with arguments "hello world"

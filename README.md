@@ -101,8 +101,10 @@ HelloWorld
 
 `argo submit -n argo --watch https://raw.githubusercontent.com/argoproj/argo-workflows/master/examples/hello-world.yaml`
 
+List submited WF:  
+`argo list -n argo`
 
-Templates
+Templates  
 `argo submit -n argo --watch wf02-container-template.yml`
 
 ### Params
