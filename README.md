@@ -9,7 +9,10 @@ Argo Workflows is an open source container-native workflow engine for orchestrat
 
 --- 
 
-## Core concepts
+
+## Core concepts  
+
+
 - **Workflow**: a Kubernetes resource defining the execution of one or more **template**. Workflows are named.
 - **Template**: a **step**, **steps** or **dag**.
 - **Step**: a single step of a **workflow**, typically run a container based on **inputs** and capture the **outputs**.
